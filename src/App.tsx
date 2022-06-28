@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
+import Banner from './pages/Banner';
 
 function App() {
   return (
     <div className="App">
-      <p>프로젝트 시작</p>
+      <Banner/>
     </div>
   );
 }
