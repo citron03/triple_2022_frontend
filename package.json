@@ -30,7 +30,6 @@
     "prettier:fix": "prettier '**/*' --write",
     "lint:style": "stylelint './**/*.{js,ts,tsx}'",
     "lint:style:fix": "stylelint './**/*.{js,ts,tsx}' --fix"
-
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +50,11 @@
     ]
   },
   "devDependencies": {
-    "@titicaca/eslint-config-triple": "^3.1.0"
+    "@titicaca/eslint-config-triple": "^3.1.0",
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0"
   }
 }
