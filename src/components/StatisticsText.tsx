@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import useCounter from '../utils/useCounter'
 
+import S from './StatisticsText.styled'
+
 const userMax = 350
 const reviewMax = 21
 const saveMax = 650
@@ -14,7 +16,7 @@ const StatisticsText = () => {
   useCounter(setReview, reviewMax, 65)
   useCounter(setSave, saveMax, 30)
   return (
-    <div>
+    <S.StatisticsText>
       <p>
         <strong>{user}만 명</strong>의 사용자
       </p>
@@ -24,7 +26,7 @@ const StatisticsText = () => {
       <p>
         <strong>{save}만 개</strong>의 저장
       </p>
-    </div>
+    </S.StatisticsText>
   )
 }
 

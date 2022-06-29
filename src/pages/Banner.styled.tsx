@@ -1,13 +1,28 @@
-import styled, { StyledComponent } from 'styled-components'
+import styled, { StyledComponent, keyframes } from 'styled-components'
+
+const appear = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const up = keyframes`
+  from {
+    margin-top: 75px;
+  }
+  to {
+    margin-top: 50px;
+  }
+`
 
 interface Style {
   Banner: StyledComponent<'div', object>
   LeftSection: StyledComponent<'section', object>
   RightSection: StyledComponent<'section', object>
-  AwardsDiv: StyledComponent<'div', object>
   LeftImg: StyledComponent<'img', object>
-  RightImg: StyledComponent<'img', object>
-  StoreDiv: StyledComponent<'div', object>
 }
 
 const S = {} as Style
@@ -15,33 +30,27 @@ const S = {} as Style
 S.Banner = styled.div`
   display: flex;
   flex-direction: row;
+  margin: 50px;
 `
 
 S.LeftSection = styled.section`
+  position: relative;
   flex: 1 1 0;
+  margin: 50px;
+  animation: ${appear} 700ms, ${up} 700ms;
 `
 
 S.RightSection = styled.section`
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
-`
-
-S.AwardsDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  margin: 50px;
+  animation: ${appear} 800ms, ${up} 800ms;
 `
 
 S.LeftImg = styled.img`
   max-width: 800px;
   height: auto;
-`
-
-S.RightImg = styled.img`
-  width: 90px;
-  height: auto;
-  margin-right: 15px;
 `
 
 export default S

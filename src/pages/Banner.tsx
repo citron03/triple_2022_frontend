@@ -1,9 +1,4 @@
-import {
-  AppleText,
-  PlaystoreText,
-  StatisticsText,
-  LeftText,
-} from '../components'
+import { Awards, StatisticsText, LeftText } from '../components'
 
 import S from './Banner.styled'
 
@@ -16,12 +11,7 @@ const Banner: React.FC = () => {
       </S.LeftSection>
       <S.RightSection>
         <StatisticsText />
-        <S.AwardsDiv>
-          <S.RightImg src="/images/play-store2x.png" alt="플레이스토어" />
-          <PlaystoreText />
-          <S.RightImg src="/images/badge-apple4x.png" alt="애플" />
-          <AppleText />
-        </S.AwardsDiv>
+        <Awards />
       </S.RightSection>
     </S.Banner>
   )
