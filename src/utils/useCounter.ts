@@ -1,6 +1,6 @@
 import { useCallback, useEffect } from 'react'
 
-import getIntervalTime from './getIntervalTime'
+import { getIntervalTime, endTime } from './getIntervalTime'
 
 const useCounter = (setter: (data: number) => void, max: number) => {
   const timer = useCallback(
@@ -15,7 +15,7 @@ const useCounter = (setter: (data: number) => void, max: number) => {
       setTimeout(() => {
         clearInterval(handler)
         setter(max)
-      }, 2000)
+      }, endTime)
     },
     [setter],
   )

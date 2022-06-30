@@ -11,4 +11,4 @@ const getIntervalTime = (max: number) => {
   return endTime / count
 }
 
-export default getIntervalTime
+export { getIntervalTime, endTime }
