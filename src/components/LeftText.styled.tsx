@@ -13,8 +13,6 @@ S.LeftText = styled.div`
   transform: translate(-50%, -50%);
   p {
     margin: 0;
-    font-size: 20px;
-    color: #696666;
   }
 `
 

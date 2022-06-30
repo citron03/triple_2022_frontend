@@ -9,8 +9,9 @@ const S = {} as Style
 S.StatisticsText = styled.div`
   flex: 1 1 0;
   p {
-    font-size: 50px;
+    font-size: 36px;
     line-height: 1;
+    margin-top: 0px;
   }
 `
 

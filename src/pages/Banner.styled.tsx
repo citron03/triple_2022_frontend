@@ -50,8 +50,10 @@ S.LeftSection = styled.section`
 `
 
 S.RightSection = styled.section`
-  margin-left: 623px;
+  position: absolute;
+  top: 110px;
   animation: ${appear} 800ms, ${up} 800ms;
+  margin-left: 623px;
   width: fit-content;
 `
 

@@ -21,19 +21,19 @@ const StatisticsText = () => {
         <strong>
           <span>{user}만 명</span>
         </strong>
-        의 사용자
+        의 여행자
       </p>
       <p>
         <strong>
           <span>{review}만 개</span>
         </strong>
-        의 리뷰
+        의 여행 리뷰
       </p>
       <p>
         <strong>
           <span>{save}만 개</span>
         </strong>
-        의 저장
+        의 여행 일정
       </p>
     </S.StatisticsText>
   )
