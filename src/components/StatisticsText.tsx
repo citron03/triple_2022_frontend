@@ -4,9 +4,9 @@ import useCounter from '../utils/useCounter'
 
 import S from './StatisticsText.styled'
 
-const userMax = 350
-const reviewMax = 21
-const saveMax = 650
+const userMax = 700
+const reviewMax = 100
+const saveMax = 470
 
 const StatisticsText = () => {
   const [user, setUser] = useState(0)

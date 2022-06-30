@@ -31,6 +31,7 @@ S.Banner = styled.div`
   display: flex;
   flex-direction: row;
   margin: 50px;
+  min-width: 1200px;
 `
 
 S.LeftSection = styled.section`
