@@ -6,15 +6,15 @@ import S from './StatisticsText.styled'
 
 const userMax = 700
 const reviewMax = 100
-const saveMax = 470
+const scheduleMax = 470
 
 const StatisticsText = () => {
   const [user, setUser] = useState(0)
   const [review, setReview] = useState(0)
-  const [save, setSave] = useState(0)
+  const [schedule, setSchedule] = useState(0)
   useCounter(setUser, userMax)
   useCounter(setReview, reviewMax)
-  useCounter(setSave, saveMax)
+  useCounter(setSchedule, scheduleMax)
   return (
     <S.StatisticsText>
       <p>
@@ -31,7 +31,7 @@ const StatisticsText = () => {
       </p>
       <p>
         <strong>
-          <span>{save}만 개</span>
+          <span>{schedule}만 개</span>
         </strong>
         의 여행 일정
       </p>
