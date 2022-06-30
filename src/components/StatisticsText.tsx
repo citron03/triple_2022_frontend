@@ -12,9 +12,9 @@ const StatisticsText = () => {
   const [user, setUser] = useState(0)
   const [review, setReview] = useState(0)
   const [save, setSave] = useState(0)
-  useCounter(setUser, userMax, 35)
-  useCounter(setReview, reviewMax, 65)
-  useCounter(setSave, saveMax, 30)
+  useCounter(setUser, userMax)
+  useCounter(setReview, reviewMax)
+  useCounter(setSave, saveMax)
   return (
     <S.StatisticsText>
       <p>
