@@ -18,13 +18,22 @@ const StatisticsText = () => {
   return (
     <S.StatisticsText>
       <p>
-        <strong>{user}만 명</strong>의 사용자
+        <strong>
+          <span>{user}만 명</span>
+        </strong>
+        의 사용자
       </p>
       <p>
-        <strong>{review}만 개</strong>의 리뷰
+        <strong>
+          <span>{review}만 개</span>
+        </strong>
+        의 리뷰
       </p>
       <p>
-        <strong>{save}만 개</strong>의 저장
+        <strong>
+          <span>{save}만 개</span>
+        </strong>
+        의 저장
       </p>
     </S.StatisticsText>
   )

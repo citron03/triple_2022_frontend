@@ -6,7 +6,6 @@ const Banner: React.FC = () => {
   return (
     <S.Banner>
       <S.LeftSection>
-        <S.LeftImg src="/images/triple2x.png" alt="트리플_이미지" />
         <LeftText />
       </S.LeftSection>
       <S.RightSection>

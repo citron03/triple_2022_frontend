@@ -33,10 +33,4 @@ S.Awards = styled.div`
   animation: ${appear} 900ms, ${upStore} 900ms;
 `
 
-S.RightImg = styled.img`
-  width: 90px;
-  height: auto;
-  margin-right: 15px;
-`
-
 export default S
