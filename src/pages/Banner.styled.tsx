@@ -30,6 +30,7 @@ const S = {} as Style
 S.Banner = styled.div`
   margin: 0px auto;
   width: fit-content;
+  height: 480px;
   min-width: 1200px;
 `
 
