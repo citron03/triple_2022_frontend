@@ -9,9 +9,9 @@ const reviewMax = 100
 const scheduleMax = 470
 
 const StatisticsText = () => {
-  const [user, setUser] = useState(0)
-  const [review, setReview] = useState(0)
-  const [schedule, setSchedule] = useState(0)
+  const [user, setUser] = useState<number>(0)
+  const [review, setReview] = useState<number>(0)
+  const [schedule, setSchedule] = useState<number>(0)
   useCounter(setUser, userMax)
   useCounter(setReview, reviewMax)
   useCounter(setSchedule, scheduleMax)
